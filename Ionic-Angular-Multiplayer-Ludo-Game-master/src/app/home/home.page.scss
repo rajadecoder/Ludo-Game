@@ -1,0 +1,183 @@
+@import "../../theme/fonts.scss";
+
+ion-content{
+   --background:url("../../assets/img/bg2.jpg") no-repeat center center / cover;
+
+     .clip{
+       background:url("../../assets/img/clip3.png");
+       background-size:contain;
+       // background-repeat:no-repeat;
+       background-position:right;
+       height:25%;
+      width:100%;
+       position:absolute;
+       bottom:0px;
+       right:0;
+       opacity:0.1;
+       z-ndex:-1;
+     }
+}
+
+
+.logo{
+  text-align:center;
+  max-width:350px;
+  margin:49px auto;
+  .ludo{
+  font-size:60px;
+  -webkit-text-stroke: 3px #FFA500;
+  font-weight:bold;
+  font-family:'Chango';
+  .l{
+    color:red;
+  }.u{
+    color:green;
+  }
+  .d{
+    color:blue
+  }
+  .o{
+    color:yellow;
+  }
+}
+  .cash{
+    text-align:right;
+    display:flex;
+    span{
+      color:#FFA500;
+      font-size:30px;
+      font-weight:bold;
+      font-family:'Chango';
+      margin-top:7px;
+
+    }
+  }
+  ion-img{
+    height:100px;
+    margin-top:-15px;
+    margin-left:30px;
+    // z-index:1;
+    // position:absolute;
+    // top:0;
+    // left:0;
+  }
+}
+
+.content{
+  .wrapper{
+$primary-blue: #0080FF;
+$light-grey:#F3F6F9;
+$dark-grey:#303336;
+$red:#FF3149;
+$green:#00D074;
+$orange:#FFB000;
+$fatty:'Chewy';
+$fancy:'Fredoka One';
+$modern:'Rubik';
+
+
+// font-family: 'Varela Round', sans-serif;
+margin-top:50px;
+
+.btn,
+p.btn {
+  display:block;
+  text-transform: none;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1em;
+  transition: all .35s cubic-bezier(.1, 0, 0, 1);
+  border-radius: 6px;
+  padding: 15px 20px;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
+  margin: 17px auto;
+  width:80%;
+  max-width:300px;
+  font-family: $fancy;
+  letter-spacing: .1em;
+  /*border: 1px solid rgba(0, 0, 0, 0);*/
+  text-shadow: 0 0 rgba(0, 0, 0, 0);
+}
+
+.btn,
+p.btn:hover {
+  border-radius: 8px;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .1), 0 4px 8px rgba(0, 0, 0, .2);
+  /*border: 1px solid rgba(0, 0, 0, .1);*/
+  transform: scale(1.06);
+  text-shadow: 0 -1px rgba(0, 0, 0, .1);
+}
+
+.btn,
+p.btn:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .2), 0 1px 3px rgba(0, 0, 0, .3);
+  /*border: 1px solid rgba(0, 0, 0, .1);*/
+}
+
+.btn,
+p.btn:visited {
+  transform: scale(1);
+}
+
+.blue,
+p.blue {
+  color: white;
+  font-weight: 600;
+  background: $primary-blue;
+}
+
+.blue,
+p.blue:hover {
+  background: lighten($primary-blue, 4%);
+}
+
+.blue,
+p.blue:active {
+  background: darken($primary-blue, 5%);
+}
+
+.grey,
+p.grey {
+  color: $dark-grey;
+  background: $light-grey;
+}
+
+.grey,
+p.grey:hover {
+  background: lighten($light-grey, 1%);
+  color: darken($dark-grey, 100%);
+}
+
+.grey,
+p.grey:active {
+  background: darken($light-grey, 2%);
+}
+
+.green,
+p.green {
+  color: white;
+  background: $green;
+}
+
+.green,
+p.green:hover {
+  background: lighten($green, 1%);
+//  color: darken($green, 100%);
+}
+
+.green,
+p.grey:active {
+  background: darken($green, 2%);
+// }
+// .green {
+//   background: $green;
+// }
+
+}
+.orange {
+  background: $orange;
+}
+  }
+
+}

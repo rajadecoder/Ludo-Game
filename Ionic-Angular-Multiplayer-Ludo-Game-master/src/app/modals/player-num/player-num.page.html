@@ -1,0 +1,74 @@
+
+<ion-content>
+  <ion-icon class="close" name="close" (click)="dismiss()"></ion-icon>
+
+  <div class="playerNum" *ngIf="playerNum">
+  <div id="wrapper" class="wrapper">
+    <p  href="#" (click)="selectPlayer(2)" class="btn green">Two Player</p>
+    <p  href="#" (click)="selectPlayer(3)" class="btn orange">Three Player</p>
+    <p href="#" (click)="selectPlayer(4)"  class="btn modern">Four Player</p>
+  </div>
+</div>
+<div class="playerName" *ngIf="playerName">
+  <div class="header">
+    <h1>Enter Players Name</h1>
+  </div>
+
+  <div *ngIf="playerN==2">
+  <div class="player1">
+    <input   type="text" id="player1" (input)="getValue($event.target)"  placeholder="Player 1" name="" value="{{player1}}">
+    <i><div class="location location-yellow"></div></i>
+  </div>
+  <div class="player2">
+    <input type="text" placeholder="Player 2" id="player2" (input)="getValue($event.target)" name="" value="{{player2}}">
+    <i><div class="location location-green"></div></i>
+  </div>
+
+  </div>
+
+    <div *ngIf="playerN==3">
+    <div class="player1">
+      <input type="text" placeholder="Player 1" id="player1" (input)="getValue($event.target)" name=""  value="Player1">
+      <i><div class="location location-yellow"></div></i>
+    </div>
+    <div class="player3">
+      <input type="text" placeholder="Player 2" id="player2" (input)="getValue($event.target)" name=""  value="Player2">
+      <i><div class="location location-red"></div></i>
+    </div>
+    <div class="player2">
+      <input type="text" placeholder="Player 3" id="player3" (input)="getValue($event.target)" name="" value="Player3">
+      <i><div class="location location-green"></div></i>
+    </div>
+
+
+    </div>
+
+      <div *ngIf="playerN==4">
+      <div class="player1">
+        <input type="text" placeholder="Player 1" id="player1" (input)="getValue($event.target)" name="" value="Player1">
+        <i><div class="location location-yellow"></div></i>
+      </div>
+      <div class="player3">
+        <input type="text" placeholder="Player 2"  id="player2" (input)="getValue($event.target)" value="Player2">
+        <i><div class="location location-red"></div></i>
+      </div>
+      <div class="player2">
+        <input type="text" placeholder="Player 3" id="player3" (input)="getValue($event.target)" value="Player3">
+        <i><div class="location location-green"></div></i>
+      </div>
+
+        <div class="player4">
+          <input type="text" placeholder="Player 4" id="player4" (input)="getValue($event.target)" value="Player4">
+          <i><div class="location location-blue"></div></i>
+        </div>
+      </div>
+
+    <div class="submit">
+      <ion-button color="primary" (click)="startGame()">Start Game</ion-button>
+    </div>
+  </div>
+
+  <div class="clip">
+
+  </div>
+</ion-content>
